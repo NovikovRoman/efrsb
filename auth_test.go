@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func Test_NewAuth(t *testing.T) {
+func TestNewAuth(t *testing.T) {
 	ctx := context.Background()
 	cfg := NewAuthConfig("demowebuser", "Ax!761BN").Dev()
 	auth, err := NewAuth(ctx, cfg)
@@ -18,4 +18,9 @@ func Test_NewAuth(t *testing.T) {
 	ok, err := auth.IsActiveToken()
 	assert.Nil(t, err)
 	assert.True(t, ok)
+
+	token := auth.token.Raw
+	err = auth.RefreshToken(ctx)
+	require.Nil(t, err)
+	assert.NotEqual(t, token, auth.token.Raw)
 }

@@ -39,7 +39,7 @@ func main() {
 }
 ```
 
-### Проверка ключа авторизации
+### Проверка токена авторизации
 
 ```go
 …
@@ -56,6 +56,14 @@ if exp, err = auth.TokenExpirationTime(); err != nil {
 }
 fmt.Printf("Дата окончания действия ключа: %s\n", exp)
 …
+```
+
+### Обновить токен авторизации
+
+```go
+if err = auth.RefreshToken(); err != nil {
+    panic(err)
+}
 ```
 
 ### Поиск банкротов
