@@ -14,10 +14,6 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
-var (
-	ErrInvalidData = fmt.Errorf("The required parameter is not specified")
-)
-
 type AuthConfig struct {
 	login string
 	pass  string
