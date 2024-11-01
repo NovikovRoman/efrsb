@@ -1,0 +1,61 @@
+<MessageData xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CaseNumber>А11-32165/2019 </CaseNumber>
+    <Publisher xsi:type="Publisher.ArbitrManager.v2">
+        <Fio>
+            <LastName>Васильев</LastName>
+            <FirstName>Иван</FirstName>
+            <MiddleName>Петрович</MiddleName>
+        </Fio>
+        <Inn>110115686508</Inn>
+        <Snils>36819469638</Snils>
+        <CorrespondenceAddress>Москва, улица Пушкина</CorrespondenceAddress>
+        <Sro>
+            <Name>Ассоциация "Первая СРО АУ" - Ассоциация «Первая Саморегулируемая Организация
+                Арбитражных Управляющих зарегистрированная в едином государственном реестре
+                саморегулируемых организаций арбитражных управляющих»</Name>
+            <Ogrn>1025203032150</Ogrn>
+            <Inn>5260111551</Inn>
+            <Address>109029, г. Москва, ул. Скотопрогонная, д. 29/1</Address>
+        </Sro>
+    </Publisher>
+    <MessageInfo MessageType="ArbitralDecree">
+    <CourtDecision>
+        <Text>Освобождение не применяется</Text>
+        <DecisionType Name="о завершении реализации имущества гражданина" Id="25" />
+        <CourtDecree>
+            <CourtId>66</CourtId>
+            <CourtName>Арбитражный суд Владимирской области</CourtName>
+            <FileNumber>А11-32165/2019 </FileNumber>
+            <DecisionDate>2023-07-06</DecisionDate>
+        </CourtDecree>
+        <LossesFromArbitrManagerActionsAmount xsi:nil="true" />
+        <CitizenNotReleasedFromResponsibility xsi:nil="true" />
+        <NextCourtSessionDate xsi:nil="true" />
+        <CreditorClaimRegisterCloseDate xsi:nil="true" />
+        <CreditorClaimSettingRequirementsExpirationDate xsi:nil="true" />
+        <DecisionMadeDueTorCancellationRestructuringPlan xsi:nil="true" />
+        <DischargeFromObligations>
+            <IsDischarged>true</IsDischarged>
+            <Reason />
+            <CreditorRequirments />
+        </DischargeFromObligations>
+    </CourtDecision>
+    </MessageInfo>
+    <Bankrupt xsi:type="Bankrupt.Person.v2">
+        <Category>
+            <Code>SimplePerson</Code>
+            <Description>Фи
+                зическое лицо</Description>
+        </Category>
+        <Fio>
+            <LastName>Васильев</LastName>
+            <FirstName>Владислав</FirstName>
+            <MiddleName>Тимофеевич</MiddleName>
+        </Fio>
+        <Snils>17211442627</Snils>
+        <Address>фываф ыв аыфв</Address>
+        <Birthdate>13.11.2000</Birthdate>
+        <Birthplace>фывафыва</Birthplace>
+    </Bankrupt>
+</MessageData>
