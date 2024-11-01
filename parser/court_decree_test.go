@@ -22,6 +22,10 @@ func TestFindCourtDecree(t *testing.T) {
 				Number:          "А56-105696/2019",
 				DecisionDateRaw: "2020-01-20",
 				DecisionDate:    time.Date(2020, 1, 20, 0, 0, 0, 0, time.UTC),
+				DecisionType: &DecisionType{
+					Name: "о введении наблюдения",
+					ID:   "11",
+				},
 			},
 		},
 		{
@@ -33,6 +37,10 @@ func TestFindCourtDecree(t *testing.T) {
 				Number:          "А61-1055/2016",
 				DecisionDateRaw: "2016-05-19",
 				DecisionDate:    time.Date(2016, 5, 19, 0, 0, 0, 0, time.UTC),
+				DecisionType: &DecisionType{
+					Name: "о признании действий (бездействий) арбитражного управляющего незаконными",
+					ID:   "22",
+				},
 			},
 		},
 		{
@@ -49,7 +57,7 @@ func TestFindCourtDecree(t *testing.T) {
 				t.Fatal(err)
 			}
 			if got := FindCourtDecree(string(b)); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("FindCourtDecree() = %v, want %v", got, tt.want)
+				t.Errorf("FindCourtDecree() = %+v, want %+v", got, tt.want)
 			}
 		})
 	}
