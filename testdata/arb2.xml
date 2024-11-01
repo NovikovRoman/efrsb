@@ -1,0 +1,43 @@
+<MessageData xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CaseNumber>А61-1055/2016</CaseNumber>
+    <Publisher xsi:type="Publisher.Asv.v2">
+        <Name>Государственная корпорация «Агентство по страхованию вкладов»</Name>
+        <Ogrn>1047796046198</Ogrn>
+        <Inn>7708514824</Inn>
+    </Publisher>
+    <MessageInfo MessageType="ArbitralDecree">
+        <CourtDecision>
+            <Text>&lt;p&gt;Сведения о вынесении АС судебного акта о признании действий КУ
+                незаконными&lt;/p&gt;</Text>
+            <DecisionType
+                Name="о признании действий (бездействий) арбитражного управляющего незаконными"
+                Id="22" />
+            <CourtDecree>
+                <CourtId>4
+                    6</CourtId>
+                <CourtName>Арбитражный суд Республики Северная Осетия - Алания</CourtName>
+                <FileNumber>А61-1055/2016</FileNumber>
+                <DecisionDate>2016-05-19</DecisionDate>
+            </CourtDecree>
+            <LossesFromArbitrManagerActionsAmount xsi:nil="true" />
+            <CitizenNotReleasedFromResponsibility xsi:nil="true" />
+            <NextCourtSessionDate xsi:nil="true" />
+            <CreditorClaimRegisterCloseDate xsi:nil="true" />
+            <CreditorClaimSettingRequirementsExpirationDate xsi:nil="true" />
+            <ArbitrManagerIllegalActionType>тип</ArbitrManagerIllegalActionType>
+            <DecisionMadeDueTorCancellationRestructuringPlan xsi:nil="true" />
+        </CourtDecision>
+    </MessageInfo>
+    <Bankrupt xsi:type="Bankrupt.Company.v2">
+        <Category>
+            <Code>CreditOrganization</Code>
+            <Description>Кредитная организация</Description>
+        </Category>
+        <Name>ПАО АКБ «1БАНК»</Name>
+        <Ogrn>1021500000147</Ogrn>
+        <Inn>1504029723</Inn>
+        <Address>362040, Республика Северная Осетия-Алания, г.Владикавказ, ул. Стани
+            славского, д. 10</Address>
+    </Bankrupt>
+</MessageData>

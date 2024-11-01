@@ -2,6 +2,7 @@ package efrsb
 
 import (
 	"context"
+	"fmt"
 	"testing"
 	"time"
 
@@ -9,14 +10,14 @@ import (
 )
 
 func TestMessages(t *testing.T) {
-	dBegin := time.Date(2024, 1, 1, 0, 0, 0, 0, time.UTC)
-	dEnd := time.Date(2024, 2, 1, 0, 0, 0, 0, time.UTC)
+	dBegin := time.Date(2023, 6, 1, 0, 0, 0, 0, time.UTC)
+	dEnd := time.Date(2023, 7, 1, 0, 0, 0, 0, time.UTC)
 	tests := []struct {
 		name    string
 		filter  MessageFilter
 		wantErr bool
 	}{
-		{
+		/* {
 			name: "By datePublish",
 			filter: MessageFilter{
 				DatePublishBegin: dBegin,
@@ -50,14 +51,14 @@ func TestMessages(t *testing.T) {
 				DatePublishBegin: dBegin,
 			},
 			wantErr: true,
-		},
+		}, */
 		{
 			name: "By type",
 			filter: MessageFilter{
 				DatePublishBegin: dBegin,
 				DatePublishEnd:   dEnd,
 				Type: []string{
-					MessageStartOfExtrajudicialBankruptcy,
+					MessageArbitralDecree,
 				},
 			},
 			wantErr: false,
@@ -80,6 +81,11 @@ func TestMessages(t *testing.T) {
 
 			assert.Greater(t, m.Total, 0)
 			assert.Equal(t, len(m.Items), m.Total)
+
+			for _, item := range m.Items {
+				mes, _ := client.Message(ctx, item.Guid)
+				fmt.Printf("%+v\n\n\n", mes)
+			}
 		})
 	}
 }

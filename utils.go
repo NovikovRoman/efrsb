@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"time"
 )
 
 func responseErrHandler(body []byte, statusCode int) (err error) {
@@ -26,13 +25,6 @@ func responseErrHandler(body []byte, statusCode int) (err error) {
 
 	if statusCode != http.StatusOK {
 		err = fmt.Errorf("StatusCode: %d %s", statusCode, body)
-	}
-	return
-}
-
-func parseDateTime(datetime, layout string) (t time.Time) {
-	if datetime != "" {
-		t, _ = time.Parse(layout, datetime)
 	}
 	return
 }

@@ -1,0 +1,51 @@
+<MessageData xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CaseNumber>А56-105696/2019 </CaseNumber>
+    <Publisher xsi:type="Publisher.Asv.v2">
+        <Fio>
+            <LastName>Васильев</LastName>
+            <FirstName>Иван</FirstName>
+            <MiddleName>Петрович</MiddleName>
+        </Fio>
+        <Inn>110115686508</Inn>
+        <Snils>11111111111</Snils>
+        <CorrespondenceAddress>test</CorrespondenceAddress>
+        <Sro>
+            <Name>Ассоциация \"Первая СРО АУ\" - Ассоциация «Первая Саморегулируемая Организация
+                Арбитражных Управляющих зарегистрированная в едином государственном реестре
+                саморегулируемых организаций арбитражных управляющих»</Name>
+            <Ogrn>1025203032150</Ogrn>
+            <Inn>5260111551</Inn>
+            <Address>109029, г. Москва, ул. Скотопрогонная, д. 29/1</Address>
+        </Sro>
+    </Publisher>
+    <MessageInfo MessageType="ArbitralDecree">
+        <CourtDecision>
+            <Text>test</Text>
+            <DecisionType Name="о введении наблюдения" Id="11" />
+            <CourtDecree>
+                <CourtId>79</CourtId>
+                <CourtName>Арбитражный суд города
+                     Санкт-Петербурга и Ленинградской области</CourtName>
+                <FileNumber>А56-105696/2019 </FileNumber>
+                <DecisionDate>2020-01-20</DecisionDate>
+            </CourtDecree>
+            <LossesFromArbitrManagerActionsAmount xsi:nil="true" />
+            <CitizenNotReleasedFromResponsibility xsi:nil="true" />
+            <CreditorClaimRegisterCloseDate xsi:nil="true" />
+            <CreditorClaimSettingRequirementsExpirationDate xsi:nil="true" />
+            <DecisionMadeDueTorCancellationRestructuringPlan xsi:nil="true" />
+            <ArbitrManagerType>Temporary</ArbitrManagerType>
+        </CourtDecision>
+    </MessageInfo>
+    <Bankrupt xsi:type="Bankrupt.Company.v2">
+        <Category>
+            <Code>SimpleOrganization</Code>
+            <Description>Обычная организация</Description>
+        </Category>
+        <Name>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСВЕННОСТЬЮ \"ДЛЯ СВОИХ НУЖД\"</Name>
+        <Ogrn>8077363037447</Ogrn>
+        <Inn>2777267292</Inn>
+        <Address>394019, ВОРОНЕЖСКАЯ ОБЛ, ГОРОД ВОРОНЕЖ, УЛИЦА ЕРЕМЕЕВА, ДОМ 24</Address>
+    </Bankrupt>
+</MessageData>

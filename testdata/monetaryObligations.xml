@@ -1,0 +1,119 @@
+<MessageData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Publisher xsi:type="Publisher.ForeignSystem.v2">
+        <Name>Включение сведений с использованием программно-аппаратного комплекса ЕФРСБ</Name>
+    </Publisher>
+    <MessageInfo MessageType="StartOfExtrajudicialBankruptcy">
+        <StartOfExtrajudicialBankruptcy>
+            <Mfc>
+                <Type>Company</Type>
+                <Name>ГБУ РК "МФЦ РК"</Name>
+                <Inn>1001264801</Inn>
+                <Ogrn>1121001020051</Ogrn>
+            </Mfc>
+            <PersonCategory>
+                <Code>PensionRecipient</Code>
+                <Description>На основании соблюдения условий, предусмотренных п.п. 2 п. 1 ст. 223.2
+                    Федерального закона от 26.10.2002 № 127-ФЗ "О несостоятельности (банкротстве)"</Description>
+            </PersonCategory>
+            <CreditorsNonFromEntrepreneurship>
+                <MonetaryObligations>
+                    <MonetaryObligation>
+                        <CreditorName>Общество с ограниченной ответственностью "Ренессанс Кредит"</CreditorName>
+                        <CreditorRegion>г. Москва</CreditorRegion>
+                        <Content>Задолженность по кредитным платежам (кроме ипотеки)</Content>
+                        <Basis>Судебный приказ от 09.12.2022 №СП2-4624/2022-12 Судебный участок №12
+                            г. Петрозаводска</Basis>
+                        <TotalSum>63449.69</TotalSum>
+                        <DebtSum>63449.69</DebtSum>
+                        <PenaltySum xsi:nil="true" />
+                    </MonetaryObligation>
+                    <MonetaryObligation>
+                        <CreditorName>Акционерное общество "Банк Русский Стандарт"</CreditorName>
+                        <CreditorRegion>г. Москва</CreditorRegion>
+                        <Content>Задолженность по кредитным платежам (кроме ипотеки)</Content>
+                        <Basis>Судебный приказ от 15.01.2022 №СП2-4583/2021-12 Судебный участок №12
+                            г. Петрозаводска</Basis>
+                        <TotalSum>55020.91</TotalSum>
+                        <DebtSum>55020.91</DebtSum>
+                        <PenaltySum xsi:nil="true" />
+                    </MonetaryObligation>
+                    <MonetaryObligation>
+                        <CreditorName>Публичное акционерное общество КБ "Восточный"</CreditorName>
+                        <CreditorRegion>г. Москва</CreditorRegion>
+                        <Content>Задолженность по кредитным платежам (кроме ипотеки)</Content>
+                        <Basis>Судебный приказ от 22.06.2021 №СП2-1775/2021-12 Судебный участок №12
+                            г. Петрозаводска</Basis>
+                        <TotalSum>61694.17</TotalSum>
+                        <DebtSum>61694.17</DebtSum>
+                        <PenaltySum xsi:nil="true" />
+                    </MonetaryObligation>
+                    <MonetaryObligation>
+                        <CreditorName>Публичное акционерное общество "Совкомбанк"</CreditorName>
+                        <CreditorRegion>Костромская область</CreditorRegion>
+                        <Content>Задолженность по кредитным платежам (кроме ипотеки)</Content>
+                        <Basis>Судебный приказ от 28.05.2021 №СП2-1393/2021-12 Судебный участок №12
+                            г. Петрозаводска</Basis>
+                        <TotalSum>102928.34</TotalSum>
+                        <DebtSum>102928.34</DebtSum>
+                        <PenaltySum xsi:nil="true" />
+                    </MonetaryObligation>
+                    <MonetaryObligation>
+                        <CreditorName>Публичное акционерное общество "Совкомбанк"</CreditorName>
+                        <CreditorRegion>Костромская область</CreditorRegion>
+                        <Content>Задолженность по кредитным платежам (кроме ипотеки)</Content>
+                        <Basis>Судебный приказ от 25.05.2021 №СП2-1319/2021-12 Судебный участок №12
+                            г. Петрозаводска</Basis>
+                        <TotalSum>10272.32</TotalSum>
+                        <DebtSum>10272.32</DebtSum>
+                        <PenaltySum xsi:nil="true" />
+                    </MonetaryObligation>
+                </MonetaryObligations>
+                <ObligatoryPayments />
+            </CreditorsNonFromEntrepreneurship>
+            <IsIndividualEntrepreneur>false</IsIndividualEntrepreneur>
+            <CreditorsFromEntrepreneurship>
+                <MonetaryObligations />
+                <ObligatoryPayments />
+            </CreditorsFromEntrepreneurship>
+            <Banks>
+                <Bank>
+                    <Name>Карельское отделение №8628 ПАО Сбербанк</Name>
+                    <BankIdentifier>048602673</BankIdentifier>
+                </Bank>
+                <Bank>
+                    <Name>ПАО "Совкомбанк"</Name>
+                    <BankIdentifier>044525360</BankIdentifier>
+                </Bank>
+                <Bank>
+                    <Name>АО "Банк Русский Стандарт"</Name>
+                    <BankIdentifier>044525151</BankIdentifier>
+                </Bank>
+                <Bank>
+                    <Name>ПАО КБ "Восточный"</Name>
+                    <BankIdentifier>041012718</BankIdentifier>
+                </Bank>
+                <Bank>
+                    <Name>ООО "КБ" Ренессанс Кредит"</Name>
+                    <BankIdentifier>044525135</BankIdentifier>
+                </Bank>
+            </Banks>
+        </StartOfExtrajudicialBankruptcy>
+    </MessageInfo>
+    <Bankrupt xsi:type="Bankrupt.Person.v2">
+        <Category>
+            <Code>SimplePerson</Code>
+            <Description>Физическое лицо</Description>
+        </Category>
+        <Fio>
+            <LastName>Филичева</LastName>
+            <FirstName>Людмила</FirstName>
+            <MiddleName>Романовна</MiddleName>
+        </Fio>
+        <Inn>100119524639</Inn>
+        <Snils>02910876150</Snils>
+        <Address>Республика Карелия, г. Петрозаводск, ул. Боровая, д.12, кв.4</Address>
+        <Birthdate>26.09.1960</Birthdate>
+        <Birthplace>г. Подпорожье Ленинградской области</Birthplace>
+    </Bankrupt>
+</MessageData>

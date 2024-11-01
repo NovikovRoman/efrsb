@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"time"
+
+	"github.com/NovikovRoman/efrsb/parser"
 )
 
 type Report struct {
@@ -36,6 +38,6 @@ func (c *Client) Report(ctx context.Context, guid string) (result Report, err er
 		err = fmt.Errorf("Unmarshal: %w Body: %s", err, string(b))
 	}
 
-	result.DatePublish = parseDateTime(result.DatePublishRaw, asRFC3339)
+	result.DatePublish = parser.DateTime(result.DatePublishRaw, asRFC3339)
 	return
 }

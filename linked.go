@@ -5,6 +5,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"time"
+
+	"github.com/NovikovRoman/efrsb/parser"
 )
 
 type LinkedMessage struct {
@@ -37,8 +39,8 @@ func (c *Client) LinkedMessages(ctx context.Context, guid string) (result []Link
 	}
 
 	for i := range result {
-		result[i].DatePublish = parseDateTime(result[i].DatePublishRaw, asRFC3339)
-		result[i].DateInvisible = parseDateTime(result[i].DateInvisibleRaw, asRFC3339)
+		result[i].DatePublish = parser.DateTime(result[i].DatePublishRaw, asRFC3339)
+		result[i].DateInvisible = parser.DateTime(result[i].DateInvisibleRaw, asRFC3339)
 	}
 	return
 }
@@ -72,7 +74,7 @@ func (c *Client) LinkedReports(ctx context.Context, guid string) (result []Linke
 	}
 
 	for i := range result {
-		result[i].DatePublish = parseDateTime(result[i].DatePublishRaw, asRFC3339)
+		result[i].DatePublish = parser.DateTime(result[i].DatePublishRaw, asRFC3339)
 	}
 	return
 }

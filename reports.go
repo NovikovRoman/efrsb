@@ -8,6 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/NovikovRoman/efrsb/parser"
 )
 
 type ReportFilter struct {
@@ -87,7 +89,7 @@ func (c *Client) Reports(ctx context.Context, filter ReportFilter, offset, limit
 	}
 
 	for i, item := range result.Items {
-		result.Items[i].DatePublish = parseDateTime(item.DatePublishRaw, asRFC3339)
+		result.Items[i].DatePublish = parser.DateTime(item.DatePublishRaw, asRFC3339)
 	}
 	return
 }

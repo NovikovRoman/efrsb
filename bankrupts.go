@@ -8,6 +8,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/NovikovRoman/efrsb/parser"
 )
 
 type BankruptFilter struct {
@@ -114,7 +116,7 @@ func (c *Client) Bankrupts(ctx context.Context, filter BankruptFilter, offset, l
 	}
 
 	for i, item := range result.Items {
-		result.Items[i].Data.Birthdate = parseDateTime(item.Data.BirthdateRaw, asRFC3339)
+		result.Items[i].Data.Birthdate = parser.DateTime(item.Data.BirthdateRaw, asRFC3339)
 	}
 	return
 }
