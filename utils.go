@@ -23,6 +23,11 @@ func responseErrHandler(body []byte, statusCode int) (err error) {
 		return
 	}
 
+	if statusCode == http.StatusNotFound {
+		err = ErrNotFound{}
+		return
+	}
+
 	if statusCode != http.StatusOK {
 		err = fmt.Errorf("StatusCode: %d %s", statusCode, body)
 	}

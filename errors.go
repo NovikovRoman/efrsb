@@ -16,6 +16,12 @@ func (e ErrUnauthorized) Error() string {
 	return "Не авторизован"
 }
 
+type ErrNotFound struct{}
+
+func (e ErrNotFound) Error() string {
+	return "Не найдено"
+}
+
 // ErrTokenExpired истек срок действия токена
 type ErrTokenExpired struct{}
 
