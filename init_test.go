@@ -15,7 +15,7 @@ func init() {
 	testClient = New(testLogin, testPassword, Dev())
 
 	ctx := context.Background()
-	if err := testClient.RefreshToken(ctx); err != nil {
+	if err := testClient.Auth(ctx); err != nil {
 		panic(err)
 	}
 }

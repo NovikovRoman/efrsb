@@ -23,18 +23,15 @@ import (
 
 func main() {
     ctx := context.Background()
-    // Для production efrsb.NewAuthConfig(login, password).Prod()
-    // Для development efrsb.NewAuthConfig(login, password).Dev()
+    // Для production efrsb.New(login, password, Prod())
+    // Для development efrsb.New(login, password, Dev())
     // По-умолчанию production
-    cfg := efrsb.NewAuthConfig(login, password)
+    client := efrsb.New(login, password, Dev())
 
     var err error
-    auth, err = efrsb.NewAuth(ctx, cfg)
-    if err != nil {
+    if err = client.Auth(ctx, cfg); err != nil {
         panic(err)
     }
-
-    client := efrsb.New(auth)
     …
 }
 ```
@@ -44,14 +41,14 @@ func main() {
 ```go
 …
 var ok bool
-if ok, err = auth.IsActiveToken(); err != nil {
+if ok, err = client.IsActiveToken(); err != nil {
     panic(err)
 }
 
 fmt.Printf("Ключ активен: %t\n", ok)
 
 var exp time.Time
-if exp, err = auth.TokenExpirationTime(); err != nil {
+if exp, err = client.TokenExpirationTime(); err != nil {
     panic(err)
 }
 fmt.Printf("Дата окончания действия ключа: %s\n", exp)
@@ -61,7 +58,7 @@ fmt.Printf("Дата окончания действия ключа: %s\n", exp)
 ### Обновить токен авторизации
 
 ```go
-if err = auth.RefreshToken(); err != nil {
+if err = client.RefreshToken(); err != nil {
     panic(err)
 }
 ```
