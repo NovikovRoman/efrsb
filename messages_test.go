@@ -71,11 +71,9 @@ func TestMessages(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			m, err := client.Messages(ctx, tt.filter, 0, 500)
+			m, err := testClient.Messages(ctx, tt.filter, 0, 500)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("Messages() error = %v, wantErr %v", err, tt.wantErr)
 			}

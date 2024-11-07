@@ -9,15 +9,13 @@ const (
 	testPassword = "Ax!761BN"
 )
 
-var testAuth *Auth
+var testClient *Client
 
 func init() {
-	ctx := context.Background()
-	cfg := NewAuthConfig(testLogin, testPassword).Dev()
+	testClient = New(testLogin, testPassword, Dev())
 
-	var err error
-	testAuth, err = NewAuth(ctx, cfg)
-	if err != nil {
+	ctx := context.Background()
+	if err := testClient.RefreshToken(ctx); err != nil {
 		panic(err)
 	}
 }

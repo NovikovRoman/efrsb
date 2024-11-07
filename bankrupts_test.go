@@ -37,11 +37,9 @@ func TestBankrupts(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			_, err := client.Bankrupts(ctx, tt.filter, 0, 1)
+			_, err := testClient.Bankrupts(ctx, tt.filter, 0, 1)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("Bankrupts() error = %v, wantErr %v", err, tt.wantErr)
 			}

@@ -26,11 +26,9 @@ func TestReport(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			r, err := client.Report(ctx, tt.guid)
+			r, err := testClient.Report(ctx, tt.guid)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("Report() error = %v, wantErr %v", err, tt.wantErr)
 			}

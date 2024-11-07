@@ -37,11 +37,9 @@ func TestMessage(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			m, err := client.Message(ctx, tt.guid)
+			m, err := testClient.Message(ctx, tt.guid)
 			if err != nil && tt.wantErr == nil || err == nil && tt.wantErr != nil {
 				t.Errorf("Message() error = %v, wantErr %v", err, tt.wantErr)
 			}

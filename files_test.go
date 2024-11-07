@@ -31,11 +31,9 @@ func TestMessageFiles(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b, err := client.MessageFiles(ctx, tt.guid, true)
+			b, err := testClient.MessageFiles(ctx, tt.guid, true)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("MessageFiles() error = %v, wantErr %v", err, tt.wantErr)
 			}
@@ -67,11 +65,9 @@ func TestReportFiles(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			b, err := client.ReportFiles(ctx, tt.guid, true)
+			b, err := testClient.ReportFiles(ctx, tt.guid, true)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("ReportFiles() error = %v, wantErr %v", err, tt.wantErr)
 			}

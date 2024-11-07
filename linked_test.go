@@ -32,11 +32,9 @@ func TestLinkedMessages(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			m, err := client.LinkedMessages(ctx, tt.guid)
+			m, err := testClient.LinkedMessages(ctx, tt.guid)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("LinkedMessages() error = %v, wantErr %v", err, tt.wantErr)
 			}
@@ -75,11 +73,9 @@ func TestLinkedReports(t *testing.T) {
 	}
 
 	ctx := context.Background()
-	client := New(testAuth)
-
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			m, err := client.LinkedReports(ctx, tt.guid)
+			m, err := testClient.LinkedReports(ctx, tt.guid)
 			if err != nil && !tt.wantErr || err == nil && tt.wantErr {
 				t.Errorf("LinkedReports() error = %v, wantErr %v", err, tt.wantErr)
 			}
