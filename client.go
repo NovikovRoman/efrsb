@@ -110,6 +110,10 @@ func (c *Client) IsActiveToken() (ok bool, err error) {
 	return
 }
 
+func (c *Client) Auth(ctx context.Context) (err error) {
+	return c.RefreshToken(ctx)
+}
+
 func (c *Client) RefreshToken(ctx context.Context) (err error) {
 	postData := struct {
 		Login    string `json:"login"`
