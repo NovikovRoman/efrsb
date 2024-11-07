@@ -25,7 +25,7 @@ func main() {
     ctx := context.Background()
     // Для production efrsb.New(login, password, Prod())
     // Для development efrsb.New(login, password, Dev())
-    // По-умолчанию production
+    // По-умолчанию production efrsb.New(login, password)
     client := efrsb.New(login, password, Dev())
 
     var err error
