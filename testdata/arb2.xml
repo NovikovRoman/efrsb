@@ -27,6 +27,12 @@
             <CreditorClaimSettingRequirementsExpirationDate xsi:nil="true" />
             <ArbitrManagerIllegalActionType>тип</ArbitrManagerIllegalActionType>
             <DecisionMadeDueTorCancellationRestructuringPlan xsi:nil="true" />
+            <DischargeFromObligations>
+                <IsDischarged>false</IsDischarged>
+                <Reason>В соответствии с п. 4 ст. 231.28 Федерального закона от 26.10.2002 N 127-ФЗ
+                    "О несостоятельности (банкротстве)".</Reason>
+                <CreditorRequirments />
+            </DischargeFromObligations>
         </CourtDecision>
     </MessageInfo>
     <Bankrupt xsi:type="Bankrupt.Company.v2">

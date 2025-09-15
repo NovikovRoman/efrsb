@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/url"
+	"os"
 	"strconv"
 	"strings"
 	"time"
@@ -110,6 +111,8 @@ func (c *Client) Bankrupts(ctx context.Context, filter BankruptFilter, offset, l
 	if b, err = c.get(ctx, "/v1/bankrupts?"+data.Encode()); err != nil {
 		return
 	}
+
+	_ = os.WriteFile("test.json", b, os.ModePerm)
 
 	if err = json.Unmarshal(b, &result); err != nil {
 		err = fmt.Errorf("Unmarshal: %w Body: %s", err, string(b))

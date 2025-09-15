@@ -8,6 +8,8 @@ import (
 )
 
 func TestFindCourtDecree(t *testing.T) {
+	tru := true
+	fals := false
 	tests := []struct {
 		name     string
 		filepath string
@@ -41,6 +43,7 @@ func TestFindCourtDecree(t *testing.T) {
 					Name: "о признании действий (бездействий) арбитражного управляющего незаконными",
 					ID:   "22",
 				},
+				Discharged: &fals,
 			},
 		},
 		{
@@ -56,7 +59,7 @@ func TestFindCourtDecree(t *testing.T) {
 					Name: "о завершении реализации имущества гражданина",
 					ID:   "25",
 				},
-				Discharged: true,
+				Discharged: &tru,
 			},
 		},
 		{

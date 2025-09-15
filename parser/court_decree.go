@@ -14,7 +14,7 @@ type CourtDecree struct {
 	DecisionDateRaw string
 	DecisionDate    time.Time
 	DecisionType    *DecisionType
-	Discharged      bool
+	Discharged      *bool
 }
 
 type DecisionType struct {
@@ -50,6 +50,10 @@ func FindCourtDecree(content string) (c *CourtDecree) {
 			ID:   removeSpace(sDecisionType.AttrOr("id", "")),
 		}
 	}
-	c.Discharged = strings.ToLower(removeSpace(s.Find("DischargeFromObligations").Text())) == "true"
+	el := s.Find("DischargeFromObligations").First()
+	if el.Length() > 0 {
+		discharged := strings.ToLower(removeSpace(el.Find("IsDischarged").Text())) == "true"
+		c.Discharged = &discharged
+	}
 	return
 }
