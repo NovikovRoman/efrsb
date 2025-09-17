@@ -63,6 +63,22 @@ func TestFindCourtDecree(t *testing.T) {
 			},
 		},
 		{
+			name:     "arb4",
+			filepath: "../testdata/arb4.xml",
+			want: &CourtDecree{
+				ID:              "103",
+				Name:            "Арбитражный суд Тюменской области",
+				Number:          "А70-4086/2021",
+				DecisionDateRaw: "2023-08-31",
+				DecisionDate:    time.Date(2023, 8, 31, 0, 0, 0, 0, time.UTC),
+				DecisionType: &DecisionType{
+					Name: "о завершении реализации имущества гражданина",
+					ID:   "25",
+				},
+				Discharged: &fals,
+			},
+		},
+		{
 			name:     "Not Found",
 			filepath: "../testdata/monetaryObligations.xml",
 			want:     nil,

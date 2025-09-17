@@ -1,0 +1,86 @@
+<MessageData xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <CaseNumber>А70-4086/2021 </CaseNumber>
+    <Publisher xsi:type="Publisher.ArbitrManager.v2">
+        <Fio>
+            <LastName>Тухикова</LastName>
+            <FirstName>Юлиана</FirstName>
+            <MiddleName>Александровна</MiddleName>
+        </Fio>
+        <Inn>190507849809</Inn>
+        <Snils>06880247094</Snils>
+        <CorrespondenceAddress>125009, г. Москва, ул. Тверская, д. 19, а/я 46, для Тухиковой Ю.А.</CorrespondenceAddress>
+        <Email>email@email.ru</Email>
+        <Sro>
+            <Name>Ассоциация "Саморегулируемая организация арбитражных управляющих "Меркурий"</Name>
+            <Ogrn>1037710023108</Ogrn>
+            <Inn>7710458616</Inn>
+            <Address>127018, г Москва, Сущевский Вал, 16, 4, оф.301 (фактический адрес)</Address>
+        </Sro>
+    </Publisher>
+    <MessageInfo MessageType="ArbitralDecree">
+        <CourtDecision>
+            <Text>Решением АС Тюменской области от 22.06.2021 г. по делу № А70-4086/2021 введена
+                процедура реализации имущества в отношении Икряновой Натальи Юрьевны (11.08.1980
+                г.р., м.р.: гор. Константиновка Донецкой обл., СНИЛС 066-967-711-24, ИНН
+                891100540843, адрес: г. Тюмень, ул. Вишневая, д. 4) сроком на 6 месяцев.
+                Финансовым управляющим утверждена Тухикова Юлиана Александровна (ИНН 390507849809,
+                СНИЛС 168-802-470 94, адрес для корреспонденции: 125009, г. Москва, ул. Тверская, д.
+                9, а/я 46, для Тухиковой Ю.А.), член НП СОАУ «МЕРКУРИЙ» (ИНН 7710458616, ОГРН
+                1037710023108, адрес: г. Москва, 2-я Ямская, 2, 201).
+
+                Определением АС Тюменской области от 31.08.2023 г. по делу № А70-4086/2021 завершена
+                процедура реализации имущества в отношении Икряновой Натальи Юрьевны (11.08.1980
+                г.р., м.р.: гор. Константиновка Донецкой обл., СНИЛС 066-967-711-24, ИНН
+                891100540843, адрес: г. Тюмень, ул. Вишневая, д. 4).
+
+                В отношении должника не применяется правило об освобождении от дальнейшего
+                исполнения требований кредиторов, в том числе требований кредиторов, не заявленных в
+                процедуре реализации имущества гражданина.
+                Полномочия финансового управляющего прекращены.</Text>
+            <DecisionType Name="о завершении реализации имущества гражданина" Id="25" />
+            <CourtDecree>
+                <CourtId>103</CourtId>
+                <CourtName>Арбитражный суд Тюменской области</CourtName>
+                <FileNumber>А70-4086/2021 </FileNumber>
+                <DecisionDate>2023-08-31</DecisionDate>
+            </CourtDecree>
+            <LossesFromArbitrManagerActionsAmount xsi:nil="true" />
+            <CitizenNotReleasedFromResponsibility xsi:nil="true" />
+            <NextCourtSessionDate xsi:nil="true" />
+            <CreditorClaimRegisterCloseDate xsi:nil="true" />
+            <CreditorClaimSettingRequirementsExpirationDate xsi:nil="true" />
+            <DecisionMadeDueTorCancellationRestructuringPlan xsi:nil="true" />
+            <DischargeFromObligations>
+                <IsDischarged>false</IsDischarged>
+                <Reason>В соответствии с п. 4 ст. 231.28 Федерального закона от 26.10.2002 N 127-ФЗ
+                    "О несостоятельности (банкротстве)".</Reason>
+                <CreditorRequirments />
+            </DischargeFromObligations>
+        </CourtDecision>
+    </MessageInfo>
+    <Bankrupt xsi:type="Bankrupt.Person.v2">
+        <Category>
+            <Code>SimplePerson</Code>
+            <Description>Физическое лицо</Description>
+        </Category>
+        <Fio>
+            <LastName>Икрянова</LastName>
+            <FirstName>Наталья</FirstName>
+            <MiddleName>Юрьевна</MiddleName>
+        </Fio>
+        <Inn>891100540843</Inn>
+        <Snils>06696771124</Snils>
+        <Address>г. Тюмень, ул. Вишневая, д. 4</Address>
+        <Birthdate>11.08.1980</Birthdate>
+        <Birthplace>гор. Константиновка Донецкой обл.</Birthplace>
+    </Bankrupt>
+    <FileInfoList>
+        <FileInfo>
+            <Name>Резолютивная часть определения АС Тюменской области от 31.08.2023 г. по делу №
+                A70-4086-2021 Икрянова Н. Ю..pdf</Name>
+            <Hash>
+                23DD8DFB248D84ACB8F9DB0E993A428969DF5146020578A2F296DB8AEE182496A92E5CBDCDF329656FF1E22D0E2ECBE12B08F5C8A0EC5CC1598BCDFE2A877C11</Hash>
+        </FileInfo>
+    </FileInfoList>
+</MessageData>
