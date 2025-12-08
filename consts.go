@@ -225,6 +225,32 @@ const (
 	MessageExtraordinaryExpenses = "ExtraordinaryExpenses"
 	// MessageReturnOfApplicationOnExtrajudicialBankruptcy2 Сообщение о возврате гражданину поданного им заявления о признании гражданина банкротом во внесудебном порядке
 	MessageReturnOfApplicationOnExtrajudicialBankruptcy2 = "ReturnOfApplicationOnExtrajudicialBankruptcy2"
+	// Сведения об утверждении положения о порядке, об условиях и о сроках реализации имущества гражданина
+	MessageCourseOfSalePersonProperty = "CourseOfSalePersonProperty"
+	// Сведения о подаче заявления о пересмотре судебного акта по вновь открывшимся обстоятельствам
+	MessageApplicationReviewCourtDecision = "ApplicationReviewCourtDecision"
+	// Сообщение о праве изменить способ распоряжения правом требования о привлечении к субсидиарной ответственности
+	MessageChangeCreditorChoiceRightSubsidiary = "ChangeCreditorChoiceRightSubsidiary"
+	// Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
+	MessageRightOfAcquisitionExecution = "RightOfAcquisitionExecution"
+	// Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
+	MessageRefusalOfIntentionCreditOrg = "RefusalOfIntentionCreditOrg"
+	// Определение о признании исполнения заявителем обязательств несостоявшимся
+	MessageLiabilitiesCreditOrgAct = "LiabilitiesCreditOrgAct"
+	// Сообщение о включении заявленных требований в реестр требований кредиторов
+	MessageCreditorsDemandRegistered = "CreditorsDemandRegistered"
+	// Сведения о вынесении судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
+	MessageIntentionOfDemandsFulfilment = "IntentionOfDemandsFulfilment"
+	// Сведения о пересмотре судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
+	MessageIntentionOfDemandsFulfilmentReview = "IntentionOfDemandsFulfilmentReview"
+	// Сведения о вынесении судебного акта о признании требований кредиторов удовлетворенными
+	MessageFulfilledDemandsRecognition = "FulfilledDemandsRecognition"
+	// Сведения о пересмотре судебного акта о признании требований кредиторов удовлетворенными
+	MessageFulfilledDemandsRecognitionReview = "FulfilledDemandsRecognitionReview"
+	// Результаты рассмотрения/пересмотра заявлений об оспаривании сделок
+	MessageDealInvalidResult = "DealInvalidResult"
+	// Уведомление о получении требований кредитора
+	MessageReceivingCreditorDemand2
 )
 
 // Типы актов
