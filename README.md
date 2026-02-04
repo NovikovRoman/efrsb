@@ -2,7 +2,8 @@
 
 > Библиотека для работы с сервисом получения сведений из ЕФРСБ.
 
-[Документация v1.0.2 26.09.2024](https://fedresurs.ru/helps/bankrupt/Service_rest_1.0.2.pdf)
+[Документация v1.3.0 29.10.2025](https://fedresurs.ru/helps/bankrupt/Service_rest_1.3.0.pdf)
+[Структура публикации от 19.02.2026](https://download.fedresurs.ru/files/PublicationsStructure_19.02.26.pdf)
 
 ## Установка
 

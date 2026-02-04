@@ -225,32 +225,40 @@ const (
 	MessageExtraordinaryExpenses = "ExtraordinaryExpenses"
 	// MessageReturnOfApplicationOnExtrajudicialBankruptcy2 Сообщение о возврате гражданину поданного им заявления о признании гражданина банкротом во внесудебном порядке
 	MessageReturnOfApplicationOnExtrajudicialBankruptcy2 = "ReturnOfApplicationOnExtrajudicialBankruptcy2"
-	// Сведения об утверждении положения о порядке, об условиях и о сроках реализации имущества гражданина
+	// MessageCourseOfSalePersonProperty Сведения об утверждении положения о порядке, об условиях и о сроках реализации имущества гражданина
 	MessageCourseOfSalePersonProperty = "CourseOfSalePersonProperty"
-	// Сведения о подаче заявления о пересмотре судебного акта по вновь открывшимся обстоятельствам
+	// MessageApplicationReviewCourtDecision Сведения о подаче заявления о пересмотре судебного акта по вновь открывшимся обстоятельствам
 	MessageApplicationReviewCourtDecision = "ApplicationReviewCourtDecision"
-	// Сообщение о праве изменить способ распоряжения правом требования о привлечении к субсидиарной ответственности
+	// MessageChangeCreditorChoiceRightSubsidiary Сообщение о праве изменить способ распоряжения правом требования о привлечении к субсидиарной ответственности
 	MessageChangeCreditorChoiceRightSubsidiary = "ChangeCreditorChoiceRightSubsidiary"
-	// Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
+	// MessageRightOfAcquisitionExecution Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
 	MessageRightOfAcquisitionExecution = "RightOfAcquisitionExecution"
-	// Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
+	// MessageRefusalOfIntentionCreditOrg Сообщение о реализации права приобрести право требования о привлечении к субсидиарной ответственности
 	MessageRefusalOfIntentionCreditOrg = "RefusalOfIntentionCreditOrg"
-	// Определение о признании исполнения заявителем обязательств несостоявшимся
+	// MessageLiabilitiesCreditOrgAct Определение о признании исполнения заявителем обязательств несостоявшимся
 	MessageLiabilitiesCreditOrgAct = "LiabilitiesCreditOrgAct"
-	// Сообщение о включении заявленных требований в реестр требований кредиторов
+	// MessageCreditorsDemandRegistered Сообщение о включении заявленных требований в реестр требований кредиторов
 	MessageCreditorsDemandRegistered = "CreditorsDemandRegistered"
-	// Сведения о вынесении судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
+	// MessageIntentionOfDemandsFulfilment Сведения о вынесении судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
 	MessageIntentionOfDemandsFulfilment = "IntentionOfDemandsFulfilment"
-	// Сведения о пересмотре судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
+	// MessageIntentionOfDemandsFulfilmentReview Сведения о пересмотре судебного акта об удовлетворении заявления о намерении удовлетворить в полном объеме требования кредиторов к должнику
 	MessageIntentionOfDemandsFulfilmentReview = "IntentionOfDemandsFulfilmentReview"
-	// Сведения о вынесении судебного акта о признании требований кредиторов удовлетворенными
+	// MessageFulfilledDemandsRecognition Сведения о вынесении судебного акта о признании требований кредиторов удовлетворенными
 	MessageFulfilledDemandsRecognition = "FulfilledDemandsRecognition"
-	// Сведения о пересмотре судебного акта о признании требований кредиторов удовлетворенными
+	// MessageFulfilledDemandsRecognitionReview Сведения о пересмотре судебного акта о признании требований кредиторов удовлетворенными
 	MessageFulfilledDemandsRecognitionReview = "FulfilledDemandsRecognitionReview"
-	// Результаты рассмотрения/пересмотра заявлений об оспаривании сделок
+	// MessageDealInvalidResult Результаты рассмотрения/пересмотра заявлений об оспаривании сделок
 	MessageDealInvalidResult = "DealInvalidResult"
-	// Уведомление о получении требований кредитора
-	MessageReceivingCreditorDemand2
+	// MessageReceivingCreditorDemand2 Уведомление о получении требований кредитора
+	MessageReceivingCreditorDemand2 = "ReceivingCreditorDemand2"
+	// MessageDealInvalid2 Заявление о признании сделки должника недействительной
+	MessageDealInvalid2 = "DealInvalid2"
+	// MessageDealInvalidResult2 Результаты рассмотрения/пересмотра заявлений об оспаривании сделок
+	MessageDealInvalidResult2 = "DealInvalidResult2"
+	// MessagePersonResponsibilityDeclaration Заявление о привлечении контролирующих должника и иных лиц к ответственности
+	MessagePersonResponsibilityDeclaration = "PersonResponsibilityDeclaration"
+	// MessagePersonResponsibilityResult Результаты рассмотрения/пересмотра заявлений о привлечении контролирующих должника и иных лиц к ответственности
+	MessagePersonResponsibilityResult = "PersonResponsibilityResult"
 )
 
 // Типы актов
@@ -309,4 +317,46 @@ const (
 	ActChangeArbitralDecree = "ChangeArbitralDecree"
 	// ActCancelArbitralDecree об отмене судебного акта
 	ActCancelArbitralDecree = "CancelArbitralDecree"
+)
+
+// Типы сообщений ЭТП
+const (
+	// EtpBiddingInvitation Сообщение о продаже
+	EtpBiddingInvitation = "BiddingInvitation"
+	// EtpBiddingDeclaration Объявлены торги
+	EtpBiddingDeclaration = "BiddingDeclaration"
+	// EtpApplicationSessionStart Начат прием заявок
+	EtpApplicationSessionStart = "ApplicationSessionStart"
+	// EtpApplicationSessionEnd Приём заявок закончен
+	EtpApplicationSessionEnd = "ApplicationSessionEnd"
+	// EtpApplicationSessionStatistic Сведения о ходе проведения торгов
+	EtpApplicationSessionStatistic = "ApplicationSessionStatistic"
+	// EtpBiddingStart Начаты торги
+	EtpBiddingStart = "BiddingStart"
+	// EtpBiddingProcess Предложение о цене
+	EtpBiddingProcess = "BiddingProcess"
+	// EtpBiddingEnd Торги завершены
+	EtpBiddingEnd = "BiddingEnd"
+	// EtpBiddingResult Результаты торгов
+	EtpBiddingResult = "BiddingResult"
+	// EtpSaleAgreement Сведения о заключении договора купли-продажи
+	EtpSaleAgreement = "SaleAgreement"
+	//EtpAnnulment  Аннулирование
+	EtpAnnulment = "Annulment"
+	// EtpBiddingCancel Отмена торгов
+	EtpBiddingCancel = "BiddingCancel"
+	// EtpBiddingFail Торги не состоялись
+	EtpBiddingFail = "BiddingFail"
+	// EtpBiddingPause Торги приостановлены
+	EtpBiddingPause = "BiddingPause"
+	// EtpBiddingResume Торги возобновлены
+	EtpBiddingResume = "BiddingResume"
+	// EtpContractSale Сообщение о заключении договора купли-продажи
+	EtpContractSale = "ContractSale"
+	// EtpBiddingEndBankruptcyCreditor О завершении торгов вследствие оставления конкурсным кредитором предмета залога за собой
+	EtpBiddingEndBankruptcyCreditor = "BiddingEndBankruptcyCreditor"
+	// EtpErrorMessage Сообщение о возникновении технического сбоя
+	EtpErrorMessage = "ErrorMessage"
+	// EtpBiddingNewTerm Сообщение об установлении новых сроков
+	EtpBiddingNewTerm = "BiddingNewTerm"
 )

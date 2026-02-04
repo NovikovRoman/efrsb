@@ -60,15 +60,17 @@ func (c *Client) Reports(ctx context.Context, filter ReportFilter, offset, limit
 	data.Set("includeContent", fmt.Sprintf("%t", filter.IncludeContent))
 	data.Set("sort", string(filter.Sort))
 
-	if filter.IsAnnulled == PositionSwitchYes {
+	switch filter.IsAnnulled {
+	case PositionSwitchYes:
 		data.Set("isAnnulled", "true")
-	} else if filter.IsAnnulled == PositionSwitchNo {
+	case PositionSwitchNo:
 		data.Set("isAnnulled", "false")
 	}
 
-	if filter.IsLocked == PositionSwitchYes {
+	switch filter.IsLocked {
+	case PositionSwitchYes:
 		data.Set("isLocked", "true")
-	} else if filter.IsLocked == PositionSwitchNo {
+	case PositionSwitchNo:
 		data.Set("isLocked", "false")
 	}
 
